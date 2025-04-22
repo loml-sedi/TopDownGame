@@ -8,6 +8,7 @@ public class HeartSystem : MonoBehaviour
     public int life;
     int count = 0;
     public GameObject gameOverScreen;
+    public static HeartSystem instance;
 
 
 
@@ -15,6 +16,11 @@ public class HeartSystem : MonoBehaviour
     void Start()
     {
 
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     // Update is called once per frame
