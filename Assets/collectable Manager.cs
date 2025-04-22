@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+
 public class collectableManager : MonoBehaviour
 {
     public static collectableManager instance;
@@ -9,19 +10,19 @@ public class collectableManager : MonoBehaviour
 
     private void Awake()
     {
-        if (!instance)
-        {
-            instance = this;
-        }
+        if (!instance) instance = this;
     }
 
-    private void OnGUI()
+    // Public method to GET the current value
+    public int GetCurrentCollectable()
     {
-        collectableDisplay.text = collectable.ToString();
+        return collectable;
     }
+
+    // Public method to MODIFY the value
     public void Changecollectable(int amount)
     {
         collectable += amount;
+        collectableDisplay.text = collectable.ToString();
     }
 }
-
