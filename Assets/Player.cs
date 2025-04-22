@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (collision.gameObject.name == "Ground")
         {
