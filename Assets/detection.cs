@@ -7,12 +7,9 @@ public class detection : MonoBehaviour
     public LineRenderer lineOfContact;
     public Gradient redColour;
     public Gradient greenColour;
-      
 
-    void Start()
-    {
-        Physics2D.queriesStartInColliders = false;
-    }
+
+    void Start() => Physics2D.queriesStartInColliders = false;
 
     // Update is called once per frame
     void Update()
