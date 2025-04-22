@@ -1,26 +1,28 @@
 using UnityEngine;
 
-public class PuppetFollow : MonoBehaviour
+public class PuppetMove : MonoBehaviour
 {
-    [Header("Follow Settings")]
     public float followSpeed = 3f;
     public float followDistance = 1f;
-
+    public bool IsFollowing { get; private set; } 
     private Transform player;
 
     void Start()
     {
-        // Automatically find player by tag
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         if (player == null)
             Debug.LogError("No GameObject with tag 'Player' found!");
     }
 
+
+
     void Update()
     {
         if (player != null)
         {
+            IsFollowing = true;
+
             Vector2 direction = player.position - transform.position;
             if (direction.magnitude > followDistance)
             {
