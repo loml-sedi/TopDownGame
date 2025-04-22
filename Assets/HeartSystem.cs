@@ -18,10 +18,7 @@ public class HeartSystem : MonoBehaviour
 
     }
 
-    private void Awake()
-    {
-        instance = this;
-    }
+    private void Awake() => instance = this;
 
     // Update is called once per frame
     void Update()
@@ -50,20 +47,10 @@ public class HeartSystem : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int d)
-    {
-        life -= d;
-    }
-    public void restartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    public void TakeDamage(int d) => life -= d;
+    public void restartGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-    public void gameOver()
-    {
-        gameOverScreen.SetActive(true);
-
-    }
+    public void gameOver() => gameOverScreen.SetActive(true);
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
