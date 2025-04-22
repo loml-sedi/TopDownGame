@@ -7,6 +7,7 @@ public class detection : MonoBehaviour
     public LineRenderer lineOfContact;
     public Gradient redColour;
     public Gradient greenColour;
+      
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class detection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
 
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance);
@@ -30,7 +32,12 @@ public class detection : MonoBehaviour
             if (hitInfo.collider.CompareTag("Player"))
             {
 
-               Destroy(hitInfo.collider.gameObject);
+
+
+                //Destroy(hitInfo.collider.gameObject);
+                DHealth();
+
+
             }
         }
         else
@@ -42,4 +49,11 @@ public class detection : MonoBehaviour
 
         lineOfContact.SetPosition(0, transform.position);
     }
+
+    public void DHealth()
+    {
+        HeartSystem.instance.TakeDamage(1);
+        HeartSystem.instance.restartGame();
+    }
+        
 }
