@@ -34,3 +34,6 @@ public class endGame : MonoBehaviour
        
     }
 }
+/*
+ * Brackeys. (2017). How to Make a Fade to Black Screen in Unity. Retrieved from YouTube: https://www.youtube.com/watch?v=0HwZQt94uHQ 
+ */

@@ -2,8 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-[RequireComponent(typeof(Button))]
-[RequireComponent(typeof(RectTransform))]
+/*
+ *Monkey, C. (2020). Unity Button Interaction Fix. . Retrieved from YouTube: https://www.youtube.com/watch?v=vmKxLibGrMo 
+ *Brackeys. (2016). Unity Buttons Complete Guide. Retrieved from YouTube: https://www.youtube.com/watch?v=zc8ac_qUXQY
+ *Monkey, C. (2021). UI Cooldown Effects in Unity. Retrieved from YouTube: https://www.youtube.com/watch?v=1qbjmb_1hV4 
+ *Monkey, C. (2023). Canvas, Buttons, Text. [YouTube video. Retrieved from YouTube: https://www.youtube.com/watch?v=zc8ac_qUXQY 
+ *Monkey, C. (2023). Unity UI Tutorial. Retrieved from YouTube: https://www.youtube.com/watch?v=3I5d2rUJ0pE
+ */
+
 public class ImmunityButton : MonoBehaviour
 {
     public PlayerImmunity playerImmunity;
@@ -35,6 +41,7 @@ public class ImmunityButton : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     void Start()
     {
         if (playerImmunity == null)
@@ -71,7 +78,6 @@ public class ImmunityButton : MonoBehaviour
             yield return null;
         }
 
-        // Reset
         if (cooldownOverlay != null)
             cooldownOverlay.fillAmount = 0;
 
@@ -80,7 +86,6 @@ public class ImmunityButton : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    // Editor-only check for proper setup
     void OnValidate()
     {
         if (_rectTransform == null)
