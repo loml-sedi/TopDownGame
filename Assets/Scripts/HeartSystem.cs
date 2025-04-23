@@ -2,10 +2,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
 
-/* GameDevel (2020) How to create a Health Life System in Unity. 8 March.[Online] Available at: https://www.youtube.com/watch?v=Ay159WsGDJQ&t=221s ( Accessed: 16 April 2025). 
- * Game Maker’s Toolkit ( 2022) The Unity Tutorial For Complete Beginners. 2 December.[Online] Available at: https://www.youtube.com/watch?v=XtQMytORBmM&t=2011s ( Accessed: 14 April 2025). 
- */
-
 public class HeartSystem : MonoBehaviour
 {
     public GameObject[] hearts;
