@@ -3,11 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 
 /*
- *Monkey, C. (2020). Unity Button Interaction Fix. . Retrieved from YouTube: https://www.youtube.com/watch?v=vmKxLibGrMo 
- *Brackeys. (2016). Unity Buttons Complete Guide. Retrieved from YouTube: https://www.youtube.com/watch?v=zc8ac_qUXQY
- *Monkey, C. (2021). UI Cooldown Effects in Unity. Retrieved from YouTube: https://www.youtube.com/watch?v=1qbjmb_1hV4 
- *Monkey, C. (2023). Canvas, Buttons, Text. [YouTube video. Retrieved from YouTube: https://www.youtube.com/watch?v=zc8ac_qUXQY 
- *Monkey, C. (2023). Unity UI Tutorial. Retrieved from YouTube: https://www.youtube.com/watch?v=3I5d2rUJ0pE
+ * Estay. C, 2020. Unity Custom Button Class with more events [Online]  Available at: https://youtu.be/RhC8_MdCGTs?si=zHsaQYIyFmFckv5s (Accessed: 18 April 2025) 
+ * GameDevGuide, 2021. Unity UI canvas modes and canvas scaler explained. [Online]  Available at: https://www.youtube.com/watch?v=1OwQflHq5kg (Accessed: 19 April 2025) 
+ * Hottest Gadgets /Unity Game Dev, 2022. how to use button interactable in unity 2022 [Online]  Available at: https://youtu.be/Yx6xi1tePjM?si=XZq-cqeg9pi0JjrT (Accessed: 17 April 2025) 
+ * Simple, 2020. TIMERS IN UNITY!! Ability Cooldowns (Unity Coroutine Tutorial) [Online]  Available at: https://youtu.be/Z2hD0WxCFak?si=UsjP0952HKGwKsoW (Accessed: 19 April 2025) 
+ * SpeedTutor, 2021. How to create buttons in Unity. [YouTube video. [Online]  Available at: https://youtu.be/gSfdCke3684?si=XNYuKFub8gNW82NZ (Accessed: 18 April 2025) 
+ * 
  */
 
 public class ImmunityButton : MonoBehaviour

@@ -1,4 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
+
+/*
+ * Blackthornprod, 2018. #14 | COLLISIONS AND TRIGGERS IN UNITY 🎮 | Unity For Beginners | Unity Tutorial. [Online] Available at: https://youtu.be/MfKyUkZb1V4?si=zwu6vXi_Y4Bycn0D (Accessed: 18 April 2025) 
+ */
 
 public class MagicBox : MonoBehaviour
 {
