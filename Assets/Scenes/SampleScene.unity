@@ -1639,6 +1639,7 @@ RectTransform:
   - {fileID: 717026246}
   - {fileID: 1318998337}
   - {fileID: 1445833917}
+  - {fileID: 2068833290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5433,19 +5434,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068833286}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.3997211, y: 2.3997211, z: 2.3997211}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2071632337}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 466748756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1056.3573, y: 490.74298}
+  m_SizeDelta: {x: 880.4, y: 409}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068833291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5459,7 +5460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackScreenPanel: {fileID: 2071632334}
-  puppetScript: {fileID: 0}
+  puppetScript: {fileID: 6298406261065506240, guid: f1be57229996d8c4fae94c180eb582ae, type: 3}
 --- !u!1 &2071632334
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,5 +5713,4 @@ SceneRoots:
   - {fileID: 522075412}
   - {fileID: 2003901650}
   - {fileID: 325578686}
-  - {fileID: 2068833290}
   - {fileID: 2040032628}
