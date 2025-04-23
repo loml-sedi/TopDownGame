@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+/*Shark Games (2023) 2D COIN COLLECTION IN UNITY (Game dev tutorial). 14 May. [Online] Available at: https://www.youtube.com/watch?v=YUp-kl06RUM ( Accessed: 16 April 2025). */
 
 public class collectableManager : MonoBehaviour
 {
