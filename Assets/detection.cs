@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class Detection : MonoBehaviour
+public class detection : MonoBehaviour
 {
-    [Header("Laser Settings")]
     public float rotateSpeed;
     public float distance;
     public LineRenderer lineOfContact;
@@ -26,7 +25,9 @@ public class Detection : MonoBehaviour
             {
                 PlayerImmunity immunity = hitInfo.collider.GetComponent<PlayerImmunity>();
                 if (immunity == null || !immunity.IsImmune())
+                {
                     DHealth();
+                }
             }
         }
         else
@@ -40,7 +41,14 @@ public class Detection : MonoBehaviour
 
     void DHealth()
     {
-        HeartSystem.instance.TakeDamage(1);
-        HeartSystem.instance.restartGame();
+        if (HeartSystem.instance != null)
+        {
+            HeartSystem.instance.TakeDamage(1);
+            HeartSystem.instance.restartGame();
+        }
+        else
+        {
+            Debug.LogError("HeartSystem instance is null!");
+        }
     }
 }
