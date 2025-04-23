@@ -1,7 +1,5 @@
 using UnityEngine;
 
-/*Anup Prasad (2020) How to Make Camera Follow In UNITY 2D. 30 October. [Online] Available at: https://www.youtube.com/watch?v=FXqwunFQuao ( Accessed: 20 April 2025). */
-
 public class cameraFollow : MonoBehaviour
 {
     public float FollowSpeed = 2f;
