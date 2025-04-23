@@ -1,55 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float moveSpeed = 5f;
+    public SpriteRenderer playerSprite;
+    public bool isImmune = false;
 
-    //public GameObject gameOverScreen;
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
-
     {
+        Vector3 moveDirection = new Vector3(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical"),
+            0
+        ).normalized;
 
-        Vector3 moveDirection = Vector3.zero;
-
-
-
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            moveDirection.y += 1;
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            moveDirection.y -= 1;
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            moveDirection.x -= 1;
-        }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            moveDirection.x += 1;
-        }
-
-        transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
-
+        transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
-    void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    public void ActivateImmunity(float duration)
     {
-        if (collision.gameObject.name == "Ground")
+        if (!isImmune)
+            StartCoroutine(ImmunityRoutine(duration));
+    }
+
+    private IEnumerator ImmunityRoutine(float duration)
+    {
+        isImmune = true;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
         {
-            print("collision with Ground");
+            playerSprite.color = new Color(1, 1, 1, 0.5f);
+            yield return new WaitForSeconds(0.1f);
+            playerSprite.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+            elapsed += 0.2f;
         }
+
+        isImmune = false;
     }
 }
