@@ -35,6 +35,7 @@ public class ImmunityButton : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     void Start()
     {
         if (playerImmunity == null)
