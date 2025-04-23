@@ -4,27 +4,32 @@ using System.Collections;
 
 public class ImmunityButton : MonoBehaviour
 {
-    [Header("References")]
-    public Button button;
+    public Button Disable;
     public PlayerImmunity playerImmunity;
     public Image cooldownOverlay;
-
-    [Header("Settings")]
     public float cooldownDuration = 5f;
 
     private bool _isOnCooldown = false;
 
     void Start()
     {
-        if (button == null) button = GetComponent<Button>();
-        button.onClick.AddListener(ActivateImmunity);
+       Debug.Log($"Button active: {gameObject.activeSelf}, pos: {transform.position}");
+
+ 
+        if (Disable == null)
+        {
+            Disable = GetComponent<Button>();
+            Disable.onClick.AddListener(ActivateImmunity);
+        }
 
         if (cooldownOverlay != null)
         {
             cooldownOverlay.type = Image.Type.Filled;
             cooldownOverlay.fillAmount = 0;
-            cooldownOverlay.raycastTarget = false; // Important: prevents overlay from blocking clicks
+            cooldownOverlay.raycastTarget = false;
         }
+
+        
     }
 
     public void ActivateImmunity()
@@ -39,7 +44,7 @@ public class ImmunityButton : MonoBehaviour
     private IEnumerator CooldownRoutine()
     {
         _isOnCooldown = true;
-        button.interactable = false;
+        Disable.interactable = false;
         float timer = cooldownDuration;
 
         while (timer > 0)
@@ -54,7 +59,7 @@ public class ImmunityButton : MonoBehaviour
         if (cooldownOverlay != null)
             cooldownOverlay.fillAmount = 0;
 
-        button.interactable = true;
+        Disable.interactable = true;
         _isOnCooldown = false;
     }
 }

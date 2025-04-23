@@ -1,12 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ButtonMove : MonoBehaviour
+public class UIFollowPlayer : MonoBehaviour
 {
-    [Header("Settings")]
-    public Transform player;          
-    public Vector2 screenOffset = new Vector2(100, -100);
-    public float smoothSpeed = 5f;  
+    public Transform player;
+    public Vector2 screenOffset = new Vector2(0, 50f);
 
     private RectTransform _rectTransform;
     private Camera _mainCam;
@@ -21,12 +18,8 @@ public class ButtonMove : MonoBehaviour
     {
         if (player == null) return;
 
-        Vector2 screenPos = _mainCam.WorldToScreenPoint(player.position);
+        Vector2 screenPoint = _mainCam.WorldToScreenPoint(player.position);
 
-        _rectTransform.position = Vector2.Lerp(
-            _rectTransform.position,
-            screenPos + screenOffset,
-            smoothSpeed * Time.deltaTime
-        );
+        _rectTransform.position = screenPoint + screenOffset;
     }
 }
