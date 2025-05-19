@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
         ).normalized;
 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
+
         CreateDust();
     }
 
