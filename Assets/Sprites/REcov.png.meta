@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0688c9ed2d10cfd4f9da7989344d07f1
+guid: 3b3e4e1734c08114898dbb896377ac79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2932971626054911752
-    second: CHAIR_0
+      213: 3800858894456984498
+    second: REcov_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CHAIR_0
+      name: REcov_0
       rect:
         serializedVersion: 2
-        x: 342
-        y: 319
-        width: 125
-        height: 116
+        x: 23
+        y: 89
+        width: 319
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8078d43872204b820800000000000000
-      internalID: 2932971626054911752
+      spriteID: 2b31e75d60d5fb430800000000000000
+      internalID: 3800858894456984498
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      CHAIR_0: 2932971626054911752
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
