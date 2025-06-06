@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85673d0e0b5fc7d4f90fcac35636def0
+guid: bb228f1cc6419c449b8d4f232f74077b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -447341998464160956
-    second: LightCover_0
+      213: 5960713649519986423
+    second: plant1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LightCover_0
+      name: plant1_0
       rect:
         serializedVersion: 2
-        x: 480
-        y: 326
-        width: 38
-        height: 48
+        x: 639
+        y: 463
+        width: 498
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44b2e6092d8bac9f0800000000000000
-      internalID: -447341998464160956
+      spriteID: 7f60677ab75b8b250800000000000000
+      internalID: 5960713649519986423
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      LightCover_0: -447341998464160956
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
