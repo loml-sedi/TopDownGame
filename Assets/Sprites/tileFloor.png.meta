@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd9c470dac4b60a418d468e2bb3fc967
+guid: e95c4268334f9f6498d2a639c10ea53f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6974940626045978076
-    second: butter[2].psd~ 1_0
+      213: -9215616447249107775
+    second: tileFloor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: butter[2].psd~ 1_0
+      name: tileFloor_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 240
-        width: 437
-        height: 507
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42ab6179478043f90800000000000000
-      internalID: -6974940626045978076
+      spriteID: 1c4387beaad8b1080800000000000000
+      internalID: -9215616447249107775
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      butter[2].psd~ 1_0: -6974940626045978076
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
