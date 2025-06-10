@@ -222,11 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      guardsFinal[1]_0: 4199303152929066317
-      guardsFinal[1]_1: -5747905027396474035
-      guardsFinal[1]_2: 19061104146014956
-      guardsFinal[1]_3: 3770952642396988396
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
