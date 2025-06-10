@@ -1,7 +1,6 @@
 using UnityEngine;
 
 /*
- * Blackthornprod. (2018). Unity 2D Trigger System for Beginners. Retrieved from YouTube: https://www.youtube.com/watch?v=qiT4f6VfRZw
  * Lague, S. (2014). A Pathfinding Tutorial. Retrieved from YouTube: https://youtu.be/nhiFx28e7JY
  * Reddit user. (2013). How to proper spawn NPCs. Retrieved from Reddit: https://www.reddit.com/r/gmod/comments/1av6fvl/how_to_proper_spawn_npcs/
  */

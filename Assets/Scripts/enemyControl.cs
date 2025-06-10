@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
+/*MoreBBlakeyy (2023) Simple 2D Enemy Patrolling Unity tutorial. 7 February. [Online] Available at: https://www.youtube.com/watch?v=RuvfOl8HhhM&t=367s  (Accessed: 17 April 2025).*/
 
 public class enemyControl : MonoBehaviour
 

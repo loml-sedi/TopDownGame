@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class UIFollowPlayer : MonoBehaviour
+public class ButtonMove : MonoBehaviour
 {
     public Transform player;
     public Vector2 screenOffset = new Vector2(0, 50f);

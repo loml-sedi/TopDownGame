@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
-
+/*Press Start (2019) Dust Effect when Running and Jumping in Unity[Particle Effect].1 September.[Online] Available at:https://www.youtube.com/watch?v=1CXVbCbqKyg (Accessed: 14 May 2025)*/
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public SpriteRenderer playerSprite;
     public bool isImmune = false;
+    public ParticleSystem dust;
 
     void Update()
     {
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
         ).normalized;
 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
+
+        CreateDust();
     }
 
     public void ActivateImmunity(float duration)
@@ -39,5 +42,11 @@ public class Player : MonoBehaviour
         }
 
         isImmune = false;
+    }
+
+    void CreateDust()
+    {
+        dust.Play();
+
     }
 }
